@@ -31,12 +31,13 @@
             padding-bottom: 24px;
             position: absolute;
             right: 0;
+            padding: 0 24px;
         }
 
         .product-detail-close{
             position: absolute;
             top: 12px;
-            left: 12px;
+            left: 32px;
             background: var(--white);
             width: 14px;
             height: 14px;
@@ -109,12 +110,17 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            width: 360px;
+            
         }
 
         @media (max-width: 640px){
             .product-detail{
                 width: 100%;
+                padding: 0;                
+            }
+            .product-detail-close{
+            top: 12px;
+            left: 12px;
             }
         }
 
